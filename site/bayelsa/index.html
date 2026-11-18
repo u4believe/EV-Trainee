@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bayelsa — EV Trainee Registration</title>
+<meta name="description" content="Register for the Senator Benson Agadaga EV Repairs & Maintenance Skill Acquisition Program, Bayelsa State.">
+<link rel="stylesheet" href="../assets/styles.css">
+</head>
+<body data-state="Bayelsa">
+<main>
+
+  <section id="info" class="hero hero-bayelsa" aria-label="Programme details">
+    <div class="wrap">
+      <a class="back" href="../">← Change state</a>
+      <img class="banner-img" src="../assets/bayelsa-banner.png" width="1080" height="522" alt="Bayelsa State Government Youth Empowerment Scheme — Senator Benson Agadaga EV Repairs and Maintenance Skill Acquisition Program">
+      <div>
+        <h1>Senator Benson Agadaga EV Repairs &amp; Maintenance Skill Acquisition Program</h1>
+        <p style="margin-top:8px">Bayelsa State Government Youth Empowerment Scheme, in partnership with the Federal Government of Nigeria. Training for 1,000 Bayelsa youths.</p>
+      </div>
+      <div class="cta-row">
+        <button type="button" class="cta-wide" data-open-form>Register here <span aria-hidden="true">→</span></button>
+      </div>
+    </div>
+  </section>
+
+  <section id="form-wrap" class="form-page" hidden>
+    <form id="reg-form" novalidate>
+      <div class="form-head">
+        <button type="button" id="close-form" class="back">← Back to programme details</button>
+        <h2>Register as a Bayelsa trainee</h2>
+        <p class="legend-note">Fields marked <span class="req">*</span> are required.</p>
+      </div>
+      <div id="fields"></div>
+      <div class="hp" aria-hidden="true">
+        <label for="f-website">Leave this field empty</label>
+        <input id="f-website" name="website" type="text" tabindex="-1" autocomplete="off">
+      </div>
+      <p class="privacy">Your details are used only to enrol and contact you for this training programme. They are held by the <span id="privacy-controller"></span> and are not shared publicly.</p>
+      <div id="form-banner" class="banner" role="alert" tabindex="-1" hidden></div>
+      <button type="submit" id="submit-btn" class="submit">Submit registration</button>
+    </form>
+  </section>
+
+  <section id="done-wrap" class="done" hidden>
+    <div class="done-card">
+      <div class="tick" aria-hidden="true">✓</div>
+      <div>
+        <h2 id="done-title" tabindex="-1">Registration received</h2>
+        <p>Thank you, <span id="done-name"></span>. Your Bayelsa registration has been recorded. <strong>Keep this ID</strong> — screenshot this page or write it down.</p>
+      </div>
+      <div class="id-box">
+        <p class="eyebrow">Submission ID</p>
+        <div class="value" id="done-id"></div>
+      </div>
+      <a class="btn-ghost" href="../">Back to start</a>
+    </div>
+  </section>
+
+</main>
+<footer>EV Skills Training Registration · Enugu &amp; Bayelsa</footer>
+<script src="../assets/fields.js"></script>
+<script src="../assets/app.js"></script>
+</body>
+</html>
