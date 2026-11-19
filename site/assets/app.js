@@ -4,8 +4,8 @@
  * against drive-by posts, not authentication.
  * ========================================================================== */
 var REG_CONFIG = {
-  endpoint: '',            // Apps Script web app URL, ends in /exec
-  token: '',               // must equal FORM_TOKEN in Script Properties
+  endpoint: 'https://script.google.com/macros/s/AKfycbzgudP9iEpdKOfjFbcbSGy8QJYxQDGclpq62u2v9_Q46kMwpyqOoMZgc06mTDBHVbke/exec',            // Apps Script web app URL, ends in /exec
+  token: '042bce7454dd4cf9979aebe24ab4bb39',               // must equal FORM_TOKEN in Script Properties
   timeoutMs: 30000,
   states: {
     Enugu: {
