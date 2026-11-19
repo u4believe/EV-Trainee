@@ -73,7 +73,7 @@ button { font: inherit; }
 .ask-note { margin: 8px 0 0; font-size: 14px; color: #7a817a; }
 
 /* ---------- state info (hero) ---------- */
-.hero { color: #fff; padding: 12px 16px 24px; }
+.hero { color: #fff; padding: 16px 16px 24px; }
 .hero-enugu { background: var(--enugu-dark); }
 .hero-bayelsa { background: var(--bayelsa); padding-bottom: 32px; }
 .hero .wrap { display: flex; flex-direction: column; gap: 16px; }

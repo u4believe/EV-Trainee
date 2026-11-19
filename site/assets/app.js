@@ -111,6 +111,12 @@ var REG_CONFIG = {
     b.addEventListener('click', function () { show('form'); var first = form.querySelector('input,select'); if (first) first.focus({ preventScroll: true }); });
   });
   document.getElementById('close-form').addEventListener('click', function () { show('info'); });
+
+  // "Change state" only for trainees who came through the state chooser (landing
+  // page sets this flag). Anyone arriving on a state's own link sees only that state.
+  try {
+    if (sessionStorage.getItem('ev_from_chooser') === '1') document.getElementById('change-state').hidden = false;
+  } catch (x) { /* storage blocked: keep it hidden */ }
   if (location.hash === '#register') show('form');
 
   /* ---------- errors ---------- */

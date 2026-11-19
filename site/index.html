@@ -43,5 +43,11 @@
   </div>
 </main>
 <footer>EV Skills Training Registration · Enugu &amp; Bayelsa</footer>
+<script>
+  // Lets the state page show "← Change state" for people who chose here.
+  document.querySelectorAll('.choice').forEach(function (a) {
+    a.addEventListener('click', function () { try { sessionStorage.setItem('ev_from_chooser', '1'); } catch (x) {} });
+  });
+</script>
 </body>
 </html>

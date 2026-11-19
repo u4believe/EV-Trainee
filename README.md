@@ -16,6 +16,17 @@ A public sign-up link for EV skills trainees. Trainees pick their state and fill
 
 Every change to `Code.gs` needs a **new deployment version**. Saving alone doesn't update the live URL.
 
+## State links
+
+| Link | Opens |
+|---|---|
+| `enugu-ev-registration.vercel.app` | Enugu page only |
+| `bayelsa-ev-registration.vercel.app` | Bayelsa page only |
+| main address, `/enugu` or `/bayelsa` | that state's page |
+| main address, `/` | "Which state are you from?" chooser |
+
+The state addresses must be added to the Vercel project (**Settings → Domains**). Routing is in `site/vercel.json`, so if you use different names or a custom domain, change the `host` values there. "← Change state" only shows for trainees who came through the chooser.
+
 ## Local development
 
 ```bash
