@@ -1,11 +1,3 @@
 {
-  "trailingSlash": true,
-  "redirects": [
-    { "source": "/:state(enugu|bayelsa)/:path*", "has": [{ "type": "host", "value": "enugu-ev-registration.vercel.app" }], "destination": "/", "permanent": false },
-    { "source": "/:state(enugu|bayelsa)/:path*", "has": [{ "type": "host", "value": "bayelsa-ev-registration.vercel.app" }], "destination": "/", "permanent": false }
-  ],
-  "rewrites": [
-    { "source": "/", "has": [{ "type": "host", "value": "enugu-ev-registration.vercel.app" }], "destination": "/enugu/index.html" },
-    { "source": "/", "has": [{ "type": "host", "value": "bayelsa-ev-registration.vercel.app" }], "destination": "/bayelsa/index.html" }
-  ]
+  "trailingSlash": true
 }

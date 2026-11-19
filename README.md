@@ -25,7 +25,7 @@ Every change to `Code.gs` needs a **new deployment version**. Saving alone doesn
 | main address, `/enugu` or `/bayelsa` | that state's page |
 | main address, `/` | "Which state are you from?" chooser |
 
-The state addresses must be added to the Vercel project (**Settings → Domains**). Routing is in `site/vercel.json`, so if you use different names or a custom domain, change the `host` values there. "← Change state" only shows for trainees who came through the chooser.
+The state addresses must be added to the Vercel project (**Settings → Domains**). Any address whose first part starts with `enugu` or `bayelsa` (e.g. `enugu.example.com`) is locked to that state by `site/assets/hosts.js`. "← Change state" only shows for trainees who came through the chooser.
 
 ## Local development
 
